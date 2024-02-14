@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-dark: #010409;
+    --secondary-dark: #0d1117;
+}
+
+body{
+    max-height: 100vh;
+    box-sizing: border-box;
+    background: var(--primary-dark);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.card__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    color: white;
+    background: var(--secondary-dark);
+    width: max(30vw, 768px);
+    height: max(29vh, 370px);
+    border-radius: 15px;
+    box-shadow: black 0 0 10px 1px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    max-width: max(23.4vw, 600px);
+    align-items: center;
+}
+
+.profile img{
+    margin-left: max(0.58vw, 15px);
+    margin-top: max(1.17vh, 15px);
+
+    width: 110px;
+    border-radius: 10px;
+}
+
+.profile .text{
+    display: flex;
+    flex-direction: column;
+    gap: max(0.156vh, 2px);
+    margin-left: 16px;
+    font-size: max(0.65vw, 16px);
+}
+
+.card .links{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: max(0.39vw, 10px);
+    float: right;
+    margin-right: max(0.97vw, 25px);
+    margin-top: max(1.568vh, 20px);
+}
+
+.card .links i{
+    font-size: max(24px, 0.94vw);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card .links i:hover{
+    transform: scale(120%);
+}
+
+.github{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: max(2vw, 52px);
+    align-items: center;
+    height: max(18vh, 230px);
+}
+
+.github .repo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: max(0.47vh, 6px);
+    width: max(12.1vw, 310px);
+    height: max(12vh, 153px);
+    border: var(--primary-dark) solid;
+    border-radius: max(0.19vw, 5px);
+    text-align: center;
+}
+
+.github .repo h2, .github .repo p{
+    max-width: 90%;
+}
+
+.github .repo p{
+    font-size: max(0.65vw, 16px);
+}
+
+.github .repo .stats{
+    margin-top: max(0.705vh, 9px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: max(1.56vw, 40px);
+}
+
+footer{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: max(0.703vw, 18px);
+    position: absolute;
+    bottom: 0;
+    color: white;
+}

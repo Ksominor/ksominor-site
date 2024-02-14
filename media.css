@@ -1,0 +1,48 @@
+@media (max-width: 770px) {
+
+    .card{
+        width: 620px;
+        height: 560px;
+    }
+
+    .github{
+        flex-direction: column;
+        height: 400px;
+        gap: 21px;
+    }
+
+}
+
+@media (max-width: 590px) { /* 586px ? */
+
+    .profile img{
+        width: 100px;
+    }
+
+    .profile .text{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .profile .text p{
+        display: none;
+    }
+
+    .card .links{ /* FIXME */
+        position: absolute;
+        margin-left: 132px;
+        margin-top: 85px;
+    }
+
+}
+
+@media (max-height: 640px) {
+
+    footer{
+        display: none;
+    }
+
+}
